@@ -22,7 +22,7 @@ import java.util.UUID;
 @Builder
 public class BeerDto {
 
-    @JsonProperty("beerId")
+    @JsonProperty("beerId")  //input beerId -> output id
     @Null
     private UUID id;
 
