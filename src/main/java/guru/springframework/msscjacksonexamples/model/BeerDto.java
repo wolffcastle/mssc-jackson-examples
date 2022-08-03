@@ -36,10 +36,10 @@ public class BeerDto {
     @Positive
     private Long upc;
 
-    @JsonFormat(shape = JsonFormat.Shape.STRING)
+    @JsonFormat(shape = JsonFormat.Shape.STRING) //Treat this as a string property
     private BigDecimal price;
 
-    @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING)
+    @JsonFormat(pattern = "yyyy-MM-dd", shape = JsonFormat.Shape.STRING) //Treat the date in this pattern and as a string
     private OffsetDateTime createdDate;
 
     private OffsetDateTime lastUpdatedDate;
