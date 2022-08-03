@@ -24,7 +24,7 @@ public class BaseTest {
                 .lastUpdatedDate(OffsetDateTime.now())
                 .price(new BigDecimal("12.99"))
                 .upc(123123123123L)
-                .myLocalDate(LocalDate.now())
+                .myLocalDate(LocalDate.now())  //new for custom serializer
                 .build();
     }
 }

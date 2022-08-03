@@ -46,6 +46,6 @@ public class BeerDto {
 
     private OffsetDateTime lastUpdatedDate;
 
-    @JsonSerialize(using = LocalDateSerializer.class)
+    @JsonSerialize(using = LocalDateSerializer.class)  //After creating the localdateSerializer annotate it to use it
     private LocalDate myLocalDate;
 }
